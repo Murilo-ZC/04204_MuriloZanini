@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e48900df-7645-43d2-b3f1-64140c3b0f53" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Projeto_Concessionaria/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Projeto_Concessionaria/src/com/company/Funcionario.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Projeto_Concessionaria/src/com/company/Gerente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Projeto_Concessionaria/src/com/company/RH.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Projeto_Concessionaria/src/com/company/Vendedor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/Conta.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/Jogo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/Usuario.java" afterDir="false" />
-    </list>
+    <list default="true" id="e48900df-7645-43d2-b3f1-64140c3b0f53" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,6 +13,7 @@
     <session id="2036894186">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.opened" value="1" />
         </counts>
@@ -54,7 +45,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
+            <state relative-caret-position="387">
               <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
             </state>
           </provider>
@@ -183,7 +174,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1585582885951" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1585624368885" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -244,7 +235,7 @@
       <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32907802" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32907802" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -318,7 +309,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
+        <state relative-caret-position="387">
           <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
         </state>
       </provider>
