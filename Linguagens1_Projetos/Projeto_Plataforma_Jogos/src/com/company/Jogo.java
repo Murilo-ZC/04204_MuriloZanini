@@ -1,5 +1,7 @@
 package com.company;
 
+import java.util.Objects;
+
 public class Jogo {
     private String nome;
     private String genero;
@@ -46,5 +48,23 @@ public class Jogo {
 
     public String getInfo(){
         return String.format("{nome:%s, genero:%s, descricao:%s}", this.nome, this.genero, this.descricao);
+    }
+
+    //Métodos necessários para comparar se já existe o objeto dentro da lista
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Jogo jogo = (Jogo) o;
+        return online == jogo.online &&
+                multiplayer == jogo.multiplayer &&
+                nome.equals(jogo.nome) &&
+                genero.equals(jogo.genero) &&
+                descricao.equals(jogo.descricao);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(nome, genero, descricao, online, multiplayer);
     }
 }

@@ -1,5 +1,7 @@
 package com.company;
 
+import java.util.Objects;
+
 public class Usuario {
     private String nickname, password, email;
 
@@ -15,5 +17,20 @@ public class Usuario {
 
     public String getNickname(){
         return nickname;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Usuario usuario = (Usuario) o;
+        return Objects.equals(nickname, usuario.nickname) &&
+                Objects.equals(password, usuario.password) &&
+                Objects.equals(email, usuario.email);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(nickname, password, email);
     }
 }
