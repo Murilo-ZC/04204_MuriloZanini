@@ -6,6 +6,7 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        System.out.println(String.format("%d", 45));
         String nome, genero, descricao;
         System.out.println("Informe nome, genero, descricao:");
         nome = scanner.nextLine();
