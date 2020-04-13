@@ -7,10 +7,15 @@ public class RH {
         double totalDeVendas = 1000;
         g1 = new Gerente(1000);
         v1 = new Vendedor(1000, g1);
-        System.out.println("Gerente 1:" + g1.getSalarioFinal(totalDeVendas));
-        System.out.println("Vendedr 1:" + v1.getSalarioFinal(totalDeVendas));
+        exibirSalarioFinal(totalDeVendas, g1);
+        exibirSalarioFinal(totalDeVendas, v1);
         if(g1.darAumento(v1, 0.1))
             System.out.println("Aumento Deu Certo!");
-        System.out.println("Vendedr 1:" + v1.getSalarioFinal(totalDeVendas));
+        exibirSalarioFinal(totalDeVendas, v1);
     }
+
+    public static void exibirSalarioFinal(double totalDeVendas, Funcionario funcionario){
+        System.out.println("Salario Final:" + funcionario.getSalarioFinal(totalDeVendas));
+    }
+
 }
