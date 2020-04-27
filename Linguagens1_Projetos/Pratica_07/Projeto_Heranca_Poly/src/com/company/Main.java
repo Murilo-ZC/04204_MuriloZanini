@@ -14,22 +14,31 @@ public class Main {
         animals.add(lobo);
         animals.add(peixe);
 
-
-//        //Método 1
-//        System.out.println("For Tradicional:");
-//        for(int i = 0; i < animals.size(); i++){
-//            animals.get(i).comer();
-//        }
-
         //Método 2
         System.out.println("Enhanced For (Foreach):");
         for (Animal animal : animals) {
             animal.comer();
+            if(animal instanceof Canino){
+                System.out.println("Canino!");
+                ComportamentoCanino((Canino)animal);
+            }
+
+            if(animal instanceof Locomover){
+                ((Locomover) animal).comoMeLocomovo();
+            }
         }
 
-//        cachorro.comer();
-//        lobo.comer();
-//        peixe.comer();
+        andaAe(cachorro);
+        andaAe(lobo);
+        andaAe(peixe);
 
+    }
+
+    public static void ComportamentoCanino(Canino canino){
+        canino.cheirar();
+    }
+
+    public static void andaAe(Locomover locomover){
+        locomover.comoMeLocomovo();
     }
 }
