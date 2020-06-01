@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="projeto_base_ecm251:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/projeto_base_ecm251_jar</output-path>
+    <root id="archive" name="projeto_base_ecm251.jar">
+      <element id="module-output" name="projeto_base_ecm251" />
+    </root>
+  </artifact>
+</component>
