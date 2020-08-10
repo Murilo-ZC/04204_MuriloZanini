@@ -1,6 +1,7 @@
 package carvalho.zanini.projeto.model;
 
 import carvalho.zanini.enumeracoes.Status;
+import org.json.JSONObject;
 
 public class Jogo {
     private String plataforma;
@@ -9,7 +10,7 @@ public class Jogo {
 
     public Jogo(String plataforma, String nome) {
         this.plataforma = plataforma;
-        this.nome = nome;
+        this.nome = "JOGO:" + nome;
         this.status = Status.NAO_INICIADO;
     }
 
@@ -28,5 +29,17 @@ public class Jogo {
 
     public void setStatusJogando() {
         this.status = Status.JOGANDO;
+    }
+
+    public String getPlataforma() {
+        return this.plataforma;
+    }
+
+    public String getNome() {
+        return this.nome;
+    }
+
+    public String getStatus() {
+        return ""+status;
     }
 }
