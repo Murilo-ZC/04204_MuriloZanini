@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="CENTER" hgap="10" prefHeight="400.0" prefWidth="600.0" vgap="10" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <rowConstraints>
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+   </rowConstraints>
+   <columnConstraints>
+      <ColumnConstraints minWidth="10.0" prefWidth="100.0" />
+   </columnConstraints>
+   <children>
+      <Label fx:id="labelSaida" text="Label" />
+      <TextField fx:id="txtEntrada" GridPane.rowIndex="1" />
+      <Button fx:id="btnAction" mnemonicParsing="false" onAction="#olaMundoCLI" text="Button" GridPane.rowIndex="2" />
+   </children>
+</GridPane>
