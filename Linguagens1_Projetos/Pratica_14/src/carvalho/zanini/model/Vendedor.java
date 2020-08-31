@@ -2,6 +2,8 @@ package carvalho.zanini.model;
 
 import carvalho.zanini.interfaces.Validator;
 
+import java.util.Objects;
+
 public class Vendedor implements Validator {
     private String id;
     private String name;
@@ -32,6 +34,15 @@ public class Vendedor implements Validator {
 
     @Override
     public boolean validate(String pass) {
-        return this.password.equals(pass);
+        return hashCode() == Objects.hashCode(pass);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(this.password);
+    }
+
+    public String getSenhaHash() {
+        return ""+hashCode();
     }
 }
