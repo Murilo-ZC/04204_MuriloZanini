@@ -21,7 +21,7 @@ public class Main {
         HttpClient client = HttpClient.newBuilder().build();
         HttpRequest request = HttpRequest.newBuilder()
                 .GET()
-                .uri(URI.create("https://api.magicthegathering.io/v1/cards?name=avacyn"))
+                .uri(URI.create("https://wordsapiv1.p.mashape.com/words/pizza/definitions"))
                 .build();
         HttpResponse<String> response = client.send(request,
                 HttpResponse.BodyHandlers.ofString());
