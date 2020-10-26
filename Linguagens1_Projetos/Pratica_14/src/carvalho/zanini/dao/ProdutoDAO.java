@@ -48,8 +48,11 @@ public class ProdutoDAO implements DAO<Produto>,DAOFields {
     public List<Produto> getAll() {
         List<Produto> produtos = new ArrayList<>();
         try{
-            Statement statement = connection.createStatement();
-            ResultSet result = statement.executeQuery(getSelectAllString(getTableName()));
+            //Statement statement = connection.createStatement();
+            PreparedStatement preparedStatement = connection.prepareStatement(getSelectAllString(getTableName()));
+//            ResultSet result = statement.executeQuery(getSelectAllString(getTableName()));
+//            preparedStatement.executeUpdate();
+            ResultSet result = preparedStatement.executeQuery();
             while(result.next()){
                 Produto produto = new Produto(
                         result.getString("codigo"),
